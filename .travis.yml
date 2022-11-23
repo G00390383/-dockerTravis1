@@ -11,6 +11,4 @@ cache:
 
 script:
   - java --version
-  - mvn -Dtest=logic/** test
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - mvn clean install
